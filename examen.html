@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a FreshCart</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Navbar */
+        .navbar-custom {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn-hero {
+            background-color: #fff;
+            color: #667eea;
+            font-weight: bold;
+            padding: 10px 30px;
+        }
+        
+        .btn-hero:hover {
+            background-color: #e9ecef;
+            color: #667eea;
+        }
+        
+        /* Tarjetas de Beneficios */
+        .benefits-section {
+            margin: 60px 0;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card h5 {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .btn-benefit {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .btn-benefit:hover {
+            background-color: #764ba2;
+            color: white;
+        }
+        
+        /* Sección de Categorías */
+        .categories-section {
+            margin: 60px 0;
+        }
+        
+        .categories-section h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .category-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            height: 100%;
+        }
+        
+        .category-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .category-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        
+        .category-item h6 {
+            font-weight: bold;
+            color: #333;
+            font-size: 0.95rem;
+        }
+        
+        .category-item p {
+            font-size: 0.75rem;
+            color: #999;
+            margin: 5px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-banner h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-banner p {
+                font-size: 0.95rem;
+            }
+            
+            .benefit-card {
+                margin-bottom: 20px;
+            }
+            
+            .category-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- top navigation for separation -->
+    <nav style="padding:1rem; background:#f0f0f0;">
+        <a href="index.html" style="text-decoration:none; font-weight:bold;">&larr; Volver al inicio</a>
+    </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">🛒 FreshCart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1>🛍️ Bienvenido a FreshCart</h1>
+            <p>Los mejores productos frescos a tu alcance</p>
+            <button class="btn btn-hero">Comenzar compras</button>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="row">
+                <!-- Beneficio 1 -->
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div style="font-size: 3rem;">📦</div>
+                        <h5>50% de reembolso en cuidado personal</h5>
+                        <p>Obtén un reembolso del 50% en todos los productos de cuidado personal. Código: CARE50</p>
+                        <button class="btn btn-benefit">Comprar ahora</button>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 2 -->
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div style="font-size: 3rem;">🍎</div>
+                        <h5>01 en la fresquería de temporada</h5>
+                        <p>Todos nuestros frutas y verduras son muy frescas. Compra ahora y ahorra</p>
+                        <button class="btn btn-benefit">Comprar ahora</button>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 3 -->
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div style="font-size: 3rem;">🛒</div>
+                        <h5>En caso de duda, como helado</h5>
+                        <p>Cómodo punto de entrega de productos congelados frescos en tu hogar</p>
+                        <button class="btn btn-benefit">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Comprar por categoría</h2>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🥦</div>
+                        <h6>Verduras Frescas</h6>
+                        <p>15 productos</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🍎</div>
+                        <h6>Frutas Orgánicas</h6>
+                        <p>12 productos</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🥛</div>
+                        <h6>Lácteos</h6>
+                        <p>18 productos</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🍞</div>
+                        <h6>Panadería</h6>
+                        <p>25 productos</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🥚</div>
+                        <h6>Proteínas</h6>
+                        <p>20 productos</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="category-item">
+                        <div style="font-size: 2.5rem;">🥫</div>
+                        <h6>Conservas</h6>
+                        <p>30 productos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Sobre nosotros</h6>
+                    <p>FreshCart es tu tiendo online de alimentos frescos y de calidad.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Enlaces útiles</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" class="text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-decoration-none">Productos</a></li>
+                        <li><a href="#" class="text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contacto</h6>
+                    <p>Email: info@freshcart.com<br>Teléfono: +34 912 345 678</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Síguenos</h6>
+                    <p>Facebook | Twitter | Instagram</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 FreshCart. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
